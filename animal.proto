@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package animal;
+
+service AnimalService {
+  rpc GetAnimals(GetAnimalsRequest) returns (GetAnimalsResponse) {}
+  rpc GetAnimalById(GetAnimalByIdRequest) returns (GetAnimalByIdResponse) {}
+}
+
+message Animal {
+  int32 id = 1;
+  string name = 2;
+}
+
+message GetAnimalsRequest {}
+
+message GetAnimalsResponse {
+  repeated Animal animals = 1;
+}
+
+message GetAnimalByIdRequest {
+  int32 id = 1;
+}
+
+message GetAnimalByIdResponse {
+  Animal animal = 1;
+}
