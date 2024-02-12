@@ -6,14 +6,19 @@ Goal is to review implementing client <-> server python communication using gRPC
 
 
 ## Getting Started
+Create a virtual environment
+```sh
+python3 -m venv env
+```
+
 Activate virtual environment
 ```sh
-source .env/bin/activate
+source env/bin/activate
 ```
 
 Install dependencies
 ```sh
-python -m pip install grpcio grpcio-tools
+pip install -r ./requirements.txt
 ```
 
 Compile proto file using the following command

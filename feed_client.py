@@ -43,19 +43,19 @@ class AnimalClient:
 
     def get_animals(self):
         print("-------------- GetAnimals --------------")
-        feed = self._stub.GetAnimals(
+        animals = self._stub.GetAnimals(
             GetAnimalsRequest()
         )
 
-        print(f'{feed=}')
+        print(f'{animals=}')
 
     def get_animal_by_id(self, id: int):
         print("-------------- GetAnimalById --------------")
-        article = self._stub.GetAnimalById(
+        animal = self._stub.GetAnimalById(
             GetAnimalByIdRequest(id=id)
         )
 
-        print(f'{article=}')
+        print(f'{animal=}')
 
     def make_requests(self):
         print("-------------- Start AnimalClient --------------")

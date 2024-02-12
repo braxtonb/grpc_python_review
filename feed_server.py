@@ -9,15 +9,15 @@ from animal_pb2 import Animal, GetAnimalsResponse, GetAnimalsRequest, GetAnimalB
 
 
 articles = [
-    Article(id=1, title='First article'),
-    Article(id=2, title='Second article'),
-    Article(id=3, title='Third article'),
+    Article(id=0, title='First article'),
+    Article(id=1, title='Second article'),
+    Article(id=2, title='Third article'),
 ]
 
 animals = [
-    Animal(id=1, name='First animal'),
-    Animal(id=2, name='Second animal'),
-    Animal(id=3, name='Third animal'),
+    Animal(id=0, name='First animal'),
+    Animal(id=1, name='Second animal'),
+    Animal(id=2, name='Third animal'),
 ]
 
 
